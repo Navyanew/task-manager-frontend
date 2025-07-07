@@ -1,0 +1,118 @@
+/* Login.css */
+
+.login-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 30px 25px;
+  border-radius: 8px;
+  background-color: #f8f9fa; /* light background */
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+}
+
+.login-container h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+.login-form input[type="text"],
+.login-form input[type="email"],
+.login-form input[type="password"] {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.login-form input[type="text"]:focus,
+.login-form input[type="email"]:focus,
+.login-form input[type="password"]:focus {
+  border-color: #28a745; /* Bootstrap success green */
+  outline: none;
+}
+
+.login-form button {
+  width: 100%;
+  background-color: #28a745;
+  color: white;
+  font-size: 1.1rem;
+  padding: 10px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+  background-color: #218838;
+}
+
+.error-message {
+  color: red;
+  margin-bottom: 15px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.register-link {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.register-link a {
+  color: #28a745;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}
+
+
+/* Animation effect on input focus */
+/* Blinking and thick border on focus */
+.blink-on-focus:focus {
+  outline: none;
+  border: 2.5px solid #28a745; /* thicker border */
+  box-shadow: 0 0 8px 3px rgba(40, 167, 69, 0.6); /* thicker glow */
+  animation: blink-border-thick 0.6s ease-in-out;
+}
+
+@keyframes blink-border-thick {
+  0% {
+    border-color: #28a745;
+    box-shadow: 0 0 8px 3px rgba(40, 167, 69, 0.6);
+  }
+  50% {
+    border-color: #218838;
+    box-shadow: 0 0 10px 4px rgba(33, 136, 56, 0.7);
+  }
+  100% {
+    border-color: #28a745;
+    box-shadow: 0 0 8px 3px rgba(40, 167, 69, 0.6);
+  }
+}
+
+
+/* Password rules list */
+.password-rules {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 15px;
+}
+
+.password-rules p {
+  margin: 4px 0;
+  transition: color 0.3s ease, font-weight 0.3s ease;
+}
+
+.password-rules p.valid {
+  color: green;
+  font-weight: 600;
+}

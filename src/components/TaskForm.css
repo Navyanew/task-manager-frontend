@@ -1,0 +1,49 @@
+.taskform {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.taskform input[type="text"],
+.taskform textarea,
+.taskform select {
+  width: 95%;
+  padding: 10px 12px;
+  margin-bottom: 15px;
+  border: 1.8px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.taskform input[type="text"]:focus,
+.taskform textarea:focus,
+.taskform select:focus {
+  border-color: #28a745; /* Bootstrap primary color */
+  outline: none;
+  box-shadow: 0 0 6px #011b07;
+}
+
+.taskform textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+.taskform button {
+  width: 100%;
+  padding: 12px 0;
+  background-color: #28a745;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-weight: 600;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.taskform button:hover {
+  background-color: #1f8036;
+}
